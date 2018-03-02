@@ -104,7 +104,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun createEditText(x: Int, y: Int) {
-        val margins = fixMargins(x, y)
+        val margins = fixMargins(y, x)
         val editText = EditText(this)
         val params = RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT)
         params.leftMargin = margins.x
